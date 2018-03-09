@@ -1,0 +1,12 @@
+clone_depth: 5
+image:
+  - Visual Studio 2015
+build_script:
+  - cmd /c my_build.bat
+after_build:
+  - cmd /c my_after_build.bat
+test_script:
+  - cmd /c echo OK
+artifacts:
+  - path: artifacts.zip
+    name: main
