@@ -14,7 +14,7 @@ if ERRORLEVEL 1 exit /b 1
 
 cd build
 
-cmake -G "Visual Studio 14 2015" .. -DCMAKE_INSTALL_PREFIX=..\install -DCMAKE_DEBUG_POSTFIX=d
+cmake -G "Visual Studio 14 2015" .. -DCMAKE_INSTALL_PREFIX=..\install -DCMAKE_DEBUG_POSTFIX=d -DLLVM_TARGETS_TO_BUILD=X86
 if ERRORLEVEL 1 exit / b 1
 
 cmake --build . --config Release
